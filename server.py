@@ -12,7 +12,7 @@ def hello():
     return "ok"
     
 @app.route("/hc")
-def hello():
+def health_check():
     return "ok"
 
 @app.route('/v/<word>')
