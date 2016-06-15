@@ -10,6 +10,10 @@ app = Flask('word2vec')
 @app.route("/")
 def hello():
     return "ok"
+    
+@app.route("/hc")
+def hello():
+    return "ok"
 
 @app.route('/v/<word>')
 def get_vectors_for_word(word):
